@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home - Miranda's Sewing Adventures</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@600&family=Montserrat&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div id="progress" class="container">
+		<div class="intro">
+			<ul class="intro-list">
+				<li><a href="index.html"><i class="fa fa-home"></i>HOME</a></li>
+				<li><a href="about.html"><i class="fa fa-user"></i>ABOUT</a></li>
+			</ul>
+				<a href="index.html"><img class="profile-picture" src="cover6.png" /></a>
+		</div>
+
+		<hr/>
+		<hr/>
+
+		<div>
+			<!--<h3 class="projects-heading">My Projects</h3> -->
+			<div class="projects-grid">
+				<div class="project-image-wrapper">
+					<h4><i class="fa fa-tree"></i></h4>
+					<a href="project1.html"><img class="project-image" src="rcover.jpg"/></a>
+				</div>
+				<div class="project-image-wrapper">
+					<h4><i class="fa fa-pagelines"></i></h4>
+					<a href="project2.html"><img class="project-image" src="wcover.jpg"/></a>
+				</div>
+				<div class="project-image-wrapper">
+					<h4><i class="fa fa-tint"></i></h4>
+					<a href="project3.html"><img class="project-image" src="bcover.jpg"/></a>
+				</div>
+				
+				<div class="project-image-wrapper">
+					<h4><i class="fa fa-sun-o"></i></h4>
+					<a href="project4.html"><img class="project-image" src="ycover.jpg"/></a>
+				</div>
+				
+			</div>
+		</div>
+
+	
+		<hr/>
+		<hr/>
+
+		<div class="footer-grid">
+			<div class="links">
+				<h3>FIND ME ON SOCIAL MEDIA!</h3>
+				<ul class="links-list">
+					<li>
+						<a href="https://www.pinterest.com/mirandassewingadventures/"><img class="logo" src="pin.jpg"></a>
+						<br/><br/>
+						<center>*more coming soon!*</center>
+					</li>
+					
+					<!--
+					<li>
+						<a href="https://instagram.com/"><img class="logo" src="insta.jpg"></a>
+					</li>
+					<li>
+						<a href="https://youtube.com/"><img class="logo" src="yt.jpg"></a>
+					</li>
+					<li>
+						<a href="https://twitter.com/"><img class="logo" src="twitter.jpg"></a>
+					</li>
+					<li>
+						<a href="https://facebook.com/"><img class="logo" src="fb.jpg"></a>
+					</li>-->
+				</ul>
+				<br/><br/>
+				<p>©2020 Miranda's Sewing Adventures
+					<br/><br/>
+				Terms and Conditions  |  Privacy Policy</p>
+			</div>
+			<div>
+				<form action="#">
+					<h3>CONTACT ME!</h3>
+					<label for="email">
+						<h4>Email</h4>
+						<input type="email" id="email" placeholder="johndoe@example.com" />
+					</label>
+					<label for="message">
+						<h4>Message</h4>
+						<textarea id="message" placeholder="Questions? Comments? Concerns?"></textarea>
+					</label>
+					<div class="submit-button-wrapper">
+						<input type="submit" value="Send Message" id="submit-button"/>
+					</div>
+				</form>
+			</div>
+		</div>	
+	</div>
+	<script src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script type="text/javascript">
+		$(window).scroll(function() {
+			var scroll = $(window).scrollTop(),
+				dh = $(document).height(),
+				wh = $(window).height();
+				value = (scroll / (dh-wh)) * 100;
+			$('#progress').css({'width', value + '%'});
+		})
+	</script>
+</body>
+</html>
+

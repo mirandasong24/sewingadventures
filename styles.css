@@ -1,0 +1,267 @@
+.container {
+	max-width: 840px;
+	margin: 0 auto;
+
+}
+
+.container > div {
+	margin: 20px auto;
+	/*margin: 0;
+	padding: 100px;
+	box-sizing: border-box;
+	color: #000;*/
+}
+
+html {
+  height: 100%;
+  background-color: #6677dd;
+  background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255, 255, 255, 0.125) 35px, rgba(255, 255, 255, 0.125) 70px), repeating-linear-gradient(-45deg, transparent, transparent 35px, rgba(255,255,255,0.125) 35px, rgba(255,255,255,0.125) 70px);
+  background-attachment: fixed;
+  filter: brightness(1);
+}
+
+.quote {
+	font-style: italic;
+}
+
+.grid-table {
+	display: grid;
+	grid-template-rows: auto auto;
+	grid-template-columns: auto auto auto;
+}
+
+hr {
+	border: 0;
+	height: 3px;
+	background-image: linear-gradient(
+		rgba(0, 0, 0, 0), 
+		rgba(0, 0, 0, .75), rgba(0, 0, 0, 0));
+}
+
+.intro {
+	text-align: center;
+}
+
+.intro-list {
+	color: white;
+}
+
+.intro ul li {
+	background: black;
+	color: white;
+	display: inline-block;
+	list-style-type: none;
+	padding: 10px;
+}
+
+.intro ul li a {
+	color: white;
+}
+
+.bio {
+	display: grid;
+	grid-template-columns: 70% 30%;
+}
+
+.bio-right {
+	width: 170px;
+	height: 170px;
+	border-radius: 50%;
+	box-shadow: 0 4px 6px 0 rgba(34, 60, 80, .16);
+	transition: all ease-in-out .2s;
+	margin: auto;
+}
+
+.bio-right:hover {
+	box-shadow: 0 20px 30px 0 rgba(34, 60, 80, .16);
+}
+
+.about-grid {
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+.i-am, .i-like {
+	text-align: center;
+	text-decoration: none;
+}
+
+.about-list {
+	list-style: none;
+	padding: 0;
+}
+
+@media (max-width: 480px) {
+	.about-grid {
+		grid-template-columns: 100%; 
+	}
+}
+
+@media (max-width: 375px) {
+	.profile-picture {
+		width: 200px; 
+		height: 84px;
+	}
+}
+
+@media (max-width: 320px) {
+	.profile-picture {
+		width: 300px; 
+		height: 84px;
+	}
+}
+
+.projects-heading {
+	text-align: center;
+}
+
+.project-image {
+	justify-self: center;
+	/*padding: 4%;
+	border-radius: 5px;*/
+	box-shadow: 0 4px 6px 0 rgba(34, 60, 80, .16);
+	transition: all ease-in-out .2s;
+	height: 280px;
+	width: 280px;
+	border: solid white 20px;
+}
+
+.project-image:hover {
+	filter: brightness(.70);
+	box-shadow: 0 8px 12px 0 rgba(34, 60, 80, .16);
+}
+
+.projects-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 650px){
+	.projects-grid {
+		grid-template-columns: 100%;
+	}
+}
+
+.footer-grid {
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+.links {
+	justify-self: center;
+}
+
+.links-list {
+	list-style: none;
+	padding: 0;
+}
+
+@media (max-width: 650px) {
+	.footer-grid {
+		grid-template-columns: 100%;
+	}
+}
+
+form input, textarea {
+	padding: 5px;
+	border-radius: 5px;
+	width: 240px;
+}
+
+form {
+	width: 250px;
+	margin: 0 auto;
+}
+
+form input[type="submit"] {
+	width: 250px;
+	background-color: #87ceeb;
+}
+
+.submit-button-wrapper {
+	margin: 20px 0;
+}
+
+.profile-picture {
+	border-radius: 2%;
+	width: 700px;
+	height: 180px;
+	/*700px and 288px*/
+	box-shadow: 0 4px 6px 0 rgba(34, 60, 80, .16);
+	transition: all ease-in-out .2s;
+}
+
+.profile-picture:hover {
+	box-shadow: 0 20px 30px 0 rgba(34, 60, 80, .16);
+}
+
+@media (max-width: 414px) {
+	.profile-picture {
+		width: 400px; 
+		height: 110px;
+	}
+}
+
+.project-image-wrapper {
+    justify-self: center;
+	padding: 4%;
+	position: relative;
+}
+
+.project-image-wrapper:hover > h4 {
+	visibility: visible;
+}
+
+.project-image-wrapper > h4 {
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	visibility: hidden;
+	z-index: 2;
+	transition: all ease-in-out .2s;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	color: #ffffff;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Source Serif Pro', serif;
+}
+
+.logo {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+.logo:hover {
+	filter: brightness(.70);
+}
+
+.links ul li {
+	display: inline-block;
+}
+
+p {
+	text-align: center;
+}
+
+.blurb h2 {
+	text-align: center;
+	color: #8b0000;
+}
+
+.blurb li {
+	list-style: none;
+}
+
+.box {
+	display: grid;
+	width: 400px;
+	margin: auto;
+	outline: 2px dashed white;
+}
